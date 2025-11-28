@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="WSLog Count by Priority" icon-name="custom:custom63">
+        <div class="slds-p-around_medium">
+                <ul>
+                    <li><strong>Lower:</strong> {lowPriority}</li>
+                    <li><strong>High:</strong> {highPriority}</li>
+                    <li><strong>Critical:</strong> {criticalPriority}</li>
+                </ul>
+            <template if:true={error}>
+                <p class="slds-text-color_error">Error: {error}</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>
